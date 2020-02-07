@@ -134,3 +134,66 @@ a{
     width: 1200px;
   }
 }
+.logo img{
+    height: 90px;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+nav
+{
+    display: block;
+}
+ .nav-wrap{
+    list-style: none;
+ }       
+#mainnav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#mainnav > ul >li
+{
+    display: inline-block;
+}
+#mainnav ul li
+{
+    position: relative;
+}
+#mainnav > ul > li {
+    margin-left: 38px;
+}
+.mainnav
+{
+     background-color: #3a526a;
+     color: #fff;
+}
+    #mainnav > ul > li > a {
+    line-height: 65px;
+    color: #fff;
+}
+#mainnav ul li a {
+    font-size: 14px;
+}
+#mainnav > ul > li > a {
+    font-weight: 600;
+}
+#mainnav > ul > li > a {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#mainnav > ul > li > a:hover {
+    color: #ea7292 !important;
+}
+
+
+/*Main Slide Show*/
+.main_slideshow
+{
+    
+}
