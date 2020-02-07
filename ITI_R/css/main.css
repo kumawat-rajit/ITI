@@ -1,0 +1,136 @@
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	overflow-x: hidden;;
+}
+a{
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+.top_theme{
+	background-color: #3a526a;
+
+	font-size: 12px;
+
+	font-family: "Poppins", sans-serif;
+
+	min-height: 45px;
+	color: #fff;
+}
+.container
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top_theme .content_left li {
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 11px;
+    margin-top: 12px;
+    letter-spacing: -0.25px;
+}
+
+.top_theme ul { 
+	margin: 0;
+}
+
+.top_theme .content_left li:first-child {
+	padding-left: 0;
+}
+.top_theme .content_left li a {
+	margin-left: -6px;
+	letter-spacing: 0;
+}
+
+.top_theme .content_left li i {
+	margin-right: 8px;
+}
+
+.top_theme,
+.top_theme a {
+	color: #fff;
+}
+
+.top_theme a:hover {
+	color: #18ba60;
+
+}
+.top_theme .border_right::after {
+    content: '';
+    right: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    width: 1px;
+    height: 14px;
+    background-color: #d1d1d1;
+}
+
+.top_theme .content_right > * {
+
+	display: inline-block;
+
+	vertical-align: top;
+
+}
+.top_theme .content_left {
+
+	float: left;
+
+}
+
+
+
+.top_theme .content_right {
+	float: right;
+
+
+}
+
+
+
+
+.top_theme .border_left,
+
+.top_theme .border_right {
+
+	position: relative;
+
+}
+.info-top-right a.appoinment, .nav-widget a.appoinment, .wrap-header-content a.appoinment {
+    display: inline-block;
+    background-color: #ea7292;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 27px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
