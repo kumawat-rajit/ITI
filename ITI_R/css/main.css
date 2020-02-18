@@ -6,6 +6,7 @@ body{
 	margin:0;
 	overflow-x: hidden;
     font-weight: 400;
+    font-family: "Poppins", sans-serif;
 }
 a{
 	text-decoration: none;
@@ -332,8 +333,8 @@ background-color:#ff675b;
     text-align: center;
   }
 .bottom .copyright p, .bottom #menu-bottom li a {
-    color: 
-    #888;
+    color: #888;
+    text-align: center;
 }
 .bottom p {
     margin-bottom: 0;
@@ -417,4 +418,55 @@ position: relative;
 }
 .footer_background{
     background-color: #222;
+}
+.footer-widgets
+{
+    overflow: hidden;
+    font-size: 14px;
+    color: #888;
+    letter-spacing: -0.5px;
+    clear: both;
+
+}
+.footer_col1
+{
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+.widget_title
+{
+
+  color:#fff;
+letter-spacing: -0.5px;
+font-size: 17px;
+font-weight: 500;
+text-transform: uppercase;
+position: relative;
+margin-bottom:31px;
+margin-top: 17px;
+padding-right: 32px;
+display: inline-block;
+}
+.footer_col2
+{
+
+    width: 16.66666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+p{
+  line-height: 25px;
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+h4{
+  line-height: 1.1;
 }
