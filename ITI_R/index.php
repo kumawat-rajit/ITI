@@ -38,14 +38,14 @@
                         
             <li id="fourth" class="fourthanimation">
             
-            <img src="img/slide1.jpg" alt="Howling"/>
+            <img src="img/slide4.jpg" alt="Howling"/>
            
           
             </li>
                         
             <li id="fifth" class="fifthanimation">
            
-            <img src="img/slide2.jpg" alt="Sunbathing"/>
+            <img src="img/slide5.jpg" alt="Sunbathing"/>
            
            
             </li>
