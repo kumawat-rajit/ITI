@@ -69,7 +69,16 @@
 	<img src="gallary/img1.jpg">
 </div>
 <div>
-	<img src="gallary/2.jpg">
+	<img src="gallary/img2.jpg">
+</div>
+<div>
+	<img src="gallary/img3.jpg">
+</div>
+<div>
+	<img src="gallary/img4.jpg">
+</div>
+<div>
+	<img src="gallary/img5.jpg">
 </div>
 </div>
 												
