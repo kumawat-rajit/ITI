@@ -73,8 +73,8 @@
                             		<ul class="menu">
                             			<li><a href="">Our Background</a></li>
                             			<li><a href="">Our Mission</a></li>
-                            			<li><a href="">Massages</a></li>
-                            			<li><a href="">Managing Society</a></li>
+                            			
+                            			<li><a href="managing-society.php">Managing Society</a></li>
 
                             		</ul>
                             		</div>
@@ -88,8 +88,8 @@
                             		</h4>
                             		<div class="menu-about-us-container">
                             		<ul class="menu">
-                            			<li><a href="">Courses</a></li>
-                            			<li><a href="">Admission Criteria and Procedure</a></li>
+                            			<li><a href="electrician.php">Courses</a></li>
+                            			<li><a href="admission.php">Admission Criteria and Procedure</a></li>
                             			<li><a href="">Institute Results</a></li>
                             			
                             		</ul>
@@ -129,7 +129,7 @@
 
                         <div class="copyright">                        
                             <p>Coyright <i class="fa fa-copyright"></i>
- 2018 <a href="#">rooprajtiti</a>. All rights reserved.</p>                        </div>
+ 2020 <a href="#">rooprajtiti</a>. All rights reserved.</p>                        </div>
 
                                                     <!-- Go Top -->
                             <a class="go-top show" id="backtotop">

@@ -7,7 +7,7 @@
             <div class="col-md-12 page-title-container">
             
 		<div class="breadcrumb-trail breadcrumbs">
-			<span class="trail-browse"></span> <span class="trail-begin"><a href="https://www.bhushaniti.com" title="Best ITI College in Jaipur, Rajasthan, Private ITI Institute">Home</a></span>
+			<span class="trail-browse"></span> <span class="trail-begin"><a href="index.php" title="Best ITI College in Jaipur, Rajasthan, Private ITI Institute">Home</a></span>
 			 <span class="sep">&gt;</span> <span class="trail-end">ELECTRICIAN</span>
 		</div> 
             <h1>ELECTRICIAN</h1>            </div><!-- /.col-md-12 -->  

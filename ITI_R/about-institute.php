@@ -8,8 +8,8 @@
             <div class="col-md-12 page-title-container">
             
 		<div class="breadcrumb-trail breadcrumbs">
-			<span class="trail-browse"></span> <span class="trail-begin"><a href="https://www.bhushaniti.com" title="Best ITI College in Jaipur, Rajasthan, Private ITI Institute">Home</a></span>
-			 <span class="sep">&gt;</span> <a href="https://www.bhushaniti.com/about-institute/" title="About us">About us</a>
+			<span class="trail-browse"></span> <span class="trail-begin"><a href="index.php" title="Best ITI College in Jaipur, Rajasthan, Private ITI Institute">Home</a></span>
+			 <span class="sep">&gt;</span> <a href="" title="About us">About us</a>
 			 <span class="sep">&gt;</span> <span class="trail-end">About Institute</span>
 		</div> 
             <h1>About Institute</h1>            </div><!-- /.col-md-12 -->  
@@ -34,10 +34,10 @@
 		<div class="wpb_wrapper">
 			<h3><span style="color: #800080;"><strong>History of Institute:</strong></span><strong><br>
 </strong></h3>
-<p>Bhushan Pvt. Industrial Training Institute, Jaipur&nbsp;has been promoted by D.N. Bhushan Siksha Evam vikas Sansthan, founded in the year 2004 by the group of professional entrepreneurs, which includes qualified Engineers with sound technical background and experience in various leading industries and academic institutions, with a view to meet present industrial and technological need of the nation thus serving society through education and development.</p>
-<p>The courses run by the Institute i.e. Electrician, Mechanic (refrigeration &amp; Air Conditioning), Fitter &amp; Mechanic (Diesel) are affiliated to NCVT (National Council of Vocation Training) which is the apex organization at National level for the programs relating to Craftsman Training Scheme under <a href="http://www.dget.nic.in/content/"><span style="color: #0000ff;">DGT (Directorate General of Training), Ministry of Skill Development &amp; Entrepreneurship,&nbsp;Government of India</span></a>, New Delhi, Accreditation with QCI (Quality Council of India), New Delhi and administered by <a href="http://www.livelihoods.rajasthan.gov.in/dtetrg"><span style="color: #0000ff;">Directorate Technical Education, Govt. of Rajasthan, Jodhpur</span></a>.</p>
+<p>Roop Rajat Industrial Training Institute, Bassi, Jaipur&nbsp;has been promoted by Prabhand Samiti Bhartiya Vidhya Mandir, founded in the year 2004 by the group of professional entrepreneurs, which includes qualified Engineers with sound technical background and experience in various leading industries and academic institutions, with a view to meet present industrial and technological need of the nation thus serving society through education and development.</p>
+<p>The courses run by the Institute i.e. Electrician is affiliated to NCVT (National Council of Vocation Training) which is the apex organization at National level for the programs relating to Craftsman Training Scheme under <a href="http://www.dget.nic.in/content/"><span style="color: #0000ff;">DGT (Directorate General of Training), Ministry of Skill Development &amp; Entrepreneurship,&nbsp;Government of India</span></a>, New Delhi, Accreditation with QCI (Quality Council of India), New Delhi and administered by <a href="http://www.livelihoods.rajasthan.gov.in/dtetrg"><span style="color: #0000ff;">Directorate Technical Education, Govt. of Rajasthan, Jodhpur</span></a>.</p>
 <p>The institute has been structured with the sole objective of Education and Industrial Training in various Trades required in diversify Industrial Sectors – Manufacturing, Power, Service, Textiles, Automotive, Chemical, Fertilizer, Paper, Refrigeration &amp; Air Conditioning etc. to the aspiring technicians offering an environment where they can grow to their full potential and become disciplined and skilled Technicians. The institutes is putting in it’s hundred percent for minimizing unemployment among educated youth &nbsp;by enabling&nbsp; them with suitable Trade skills and Employ-ability for corporate requirement meeting&nbsp;the needs&nbsp;of latest global technology.</p>
-<p><strong>Bhushan Pvt. Industrial Training Institute</strong>&nbsp;is&nbsp;emerging as a pioneering institute on the Industrial Training horizon with a firm commitment to&nbsp;<strong><span style="color: #800080;">“Excellence through Quality”</span>.</strong></p>
+<p><strong>Roop Rajat Pvt. Industrial Training Institute</strong>&nbsp;is&nbsp;emerging as a pioneering institute on the Industrial Training horizon with a firm commitment to&nbsp;<strong><span style="color: #800080;">“Excellence through Quality”</span>.</strong></p>
 
 		</div>
 	</div>

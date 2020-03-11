@@ -57,7 +57,7 @@ header("Location: index.php");
                 			<div class="header-wrap clearfix">
                         		<div id="logo" class="logo">                  
         							<a href="https://www.bhushaniti.com/" title="Best ITI College in Jaipur, Rajasthan, Private ITI Institute">
-                            		<img class="site-logo" src="img/header_img.png" alt="" data-retina="">
+                            		<img class="site-logo" src="img/web_title.png" alt="" data-retina="">
                     				</a>
     							</div>
 
@@ -87,35 +87,15 @@ header("Location: index.php");
         									<a href="index.php" aria-current="page">Managing Society</a>
         							</li>
 									<li>
-											<a href="#">About Us</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="about-institute.php">About Institute</a>
-													</li>
-													<li>
-														<a href="managing-society.php">Managing Society</a>
-													</li>
-												</ul>
+											<a href="#">Technical Staff</a>
+												
 									</li>
 									<li>
-											<a href="#">Courses</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="electrician.php">Electrician</a>
-													</li>
-													<li>
-														<a href="fitter.php">Fitter</a>
-													</li>
-													<li>
-														<a href="machanic-diesel.php">Machanic Diesel</a>
-													</li>
-													<li>
-														<a href="managing-society.php">Fitter</a>
-													</li>
-												</ul>
+											<a href="#">Admistrative Staff</a>
+												
 									</li>
 									<li>
-											<a href="about-us.php">About Us</a>
+											<a href="">Inspection</a>
 												<ul class="sub-menu">
 										
 												</ul>

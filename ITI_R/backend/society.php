@@ -40,8 +40,10 @@ $fname=$_POST['fname'];
 $address=$_POST['address'];
 $mo=$_POST['mo'];
 $detail=$_POST['detail'];
+//echo $id;
+		//die();
+		$sql = "UPDATE society SET name=?, designation=?, fname=?, address=?, mem_other=?, detail=? WHERE id=?";
 
-		$sql = "UPDATE society SET name=?,desig=?, fname=?, address=?, mem_other=?, detail=? WHERE id=?";
 $stmt= $conn->prepare($sql);
 $stmt->execute([$name,$desig, $fname, $address,$mo,$detail, $id]);
 

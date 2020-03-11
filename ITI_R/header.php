@@ -3,12 +3,14 @@
 <head>
 	<title>Best ITI College in Bassi</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" media="all">
 	<link rel="stylesheet" id="themesflat-theme-slug-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%2C900%2Cregular%7CPoppins%3A300%2C400%2C500%2C600%2C700%2C900%2C600%7CPoppins%3A600" type="text/css" media="all">
 	<link rel="stylesheet" id="vc_ion_icon-css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=5.3.2" type="text/css" media="all">
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="favicon/favicon.png" type="image/png" sizes="16x16">
 
 </head>
 <body>
@@ -46,7 +48,7 @@
                 			<div class="header-wrap clearfix">
                         		<div id="logo" class="logo">                  
         							<a href="https://www.bhushaniti.com/" title="Best ITI College in Jaipur, Rajasthan, Private ITI Institute">
-                            		<img class="site-logo" src="img/header_img.png" alt="" data-retina="">
+                            		<img class="site-logo" src="img/web_title.png" alt="" data-retina="">
                     				</a>
     							</div>
 
@@ -96,7 +98,70 @@
 												</ul>
 									</li>
 									<li>
-											<a href="about-us.php">About Us</a>
+											<a href="#">Admission</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="admission.php">Admission Criteria and Procedure</a>
+													</li>
+													<li>
+														<a href="">Affiliated Trades</a>
+													</li>
+													
+												</ul>
+									</li>
+									<li>
+											<a href="#">Faculty</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="technical-staff.php">Technical Staff</a>
+													</li>
+													<li>
+														<a href="#">Admistrative Staff</a>
+													</li>
+													
+												</ul>
+									</li>
+									<li>
+											<a href="#">Infrastructure</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="workshop.php">Building & Workshop</a>
+													</li>
+													<li>
+														<a href="">Library & IT Lab</a>
+													</li>
+													
+												</ul>
+									</li>
+									<li>
+											<a href="#">Result</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="">Institute Result Year Wise</a>
+													</li>
+													<li>
+														<a href="">Recent NCVT Result</a>
+													</li>
+													
+												</ul>
+									</li>
+									<li>
+											<a href="#">Miscellaneous</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="">Inspection</a>
+													</li>
+													<li>
+														<a href="">Grievance Redressal</a>
+													</li>
+													<li>
+														<a href="">Court Cases and Status</a>
+													</li>
+													
+												</ul>
+									</li>
+									<li>
+											<a href="contact-us.php">Contact Us</a>
 												<ul class="sub-menu">
 										
 												</ul>

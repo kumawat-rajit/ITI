@@ -171,6 +171,7 @@ $i=1;
        <form id="comedit_form">
         
   <div class="form-group">
+      <input type="hidden" id="id_u" name="id" class="form-control" required>
     <label for="name">Name:</label>
     <input type="text" class="form-control" placeholder="Name" id="name_u" name="name" >
   </div>
