@@ -2,10 +2,10 @@
 class Database{
  
     // specify your own database credentials
-    private $host = "localhost";
-    private $db_name = "roop_rajat_iti";
-    private $username = "root";
-    private $password = "harekrishna";
+    private $host = "162.241.85.56";
+    private $db_name = "roopr7th_roop_rajat_iti";
+    private $username = "roopr7th_roopraj";
+    private $password = "rooprajat";
     public $conn;
  
     // get the database connection

@@ -86,6 +86,10 @@ header("Location: index.php");
         							<li>
         									<a href="index.php" aria-current="page">Managing Society</a>
         							</li>
+        							<li>
+											<a href="#">New & Notificaton</a>
+												
+									</li>
 									<li>
 											<a href="#">Technical Staff</a>
 												
