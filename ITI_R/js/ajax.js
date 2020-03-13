@@ -99,3 +99,70 @@ $(document).on("click", ".delete", function() {
 		});
 	});
 
+
+// update upload question
+
+	$(document).on('click','.update',function() {
+		//alert('hi');
+		var id=$(this).attr("data-id");
+		var name=$(this).attr("data-caption");
+		
+		
+		$('#id_u').val(id);
+		$('#caption_u').val(name);
+		
+		
+	});
+	
+	$(document).on('click','#upload_update',function() {
+		var data = $("#uploadedit_form").serialize();
+		$.ajax({
+			data: data,
+			type: "post",
+			url: "backend/upload.php",
+			success: function(dataResult){
+				console.log(dataResult);
+					var dataResult = JSON.parse(dataResult);
+					if(dataResult.statusCode==200){
+						$('#upload_edit').modal('hide');
+						alert('Data updated successfully !'); 
+                        location.reload();						
+					}
+					else if(dataResult.statusCode==201){
+					   //alert(dataResult);
+					}
+			}
+		});
+	});
+
+
+
+//delete computer question	
+
+$(document).on("click", ".delete", function() { 
+			var id=$(this).attr("data-id");
+		$('#id_d').val(id);
+		
+	});
+
+
+	$(document).on("click", "#upload_del", function() { 
+		
+		$.ajax({
+			url: "backend/upload.php",
+			type: "POST",
+			cache: false,
+			data:{
+				type:3,
+				id: $("#id_d").val()
+			},
+			success: function(dataResult){
+				//console.log(dataResult);
+					$('#upload_delete').modal('hide');
+					//$("#"+dataResult).remove();
+			      location.reload();
+			}
+		});
+	});
+
+

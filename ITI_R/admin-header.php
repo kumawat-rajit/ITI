@@ -84,14 +84,14 @@ header("Location: index.php");
     						<nav id="mainnav" class="mainnav" role="navigation">
         						<ul id="menu-menu-1" class="menu">
         							<li>
-        									<a href="index.php" aria-current="page">Managing Society</a>
+        									<a href="admin-home.php" aria-current="page">Managing Society</a>
         							</li>
         							<li>
-											<a href="#">New & Notificaton</a>
+											<a href="admin-news.php">New & Notificaton</a>
 												
 									</li>
 									<li>
-											<a href="#">Technical Staff</a>
+											<a href="admin-technical">Technical Staff</a>
 												
 									</li>
 									<li>

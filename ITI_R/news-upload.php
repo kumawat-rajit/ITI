@@ -25,24 +25,38 @@ if(isset($_POST['btn_upload']))
  //echo $file_loc; die();
  if(move_uploaded_file($file_loc,$folder.$final_file))
  {
-  $sql="INSERT INTO news_notification(caption,file_name,type) VALUES(?,?,?)";
+  //$sql="INSERT INTO news_notification (caption,file_name,type) VALUES(?,?,?)";
 
   //echo $sql; die();
  // $mysqli -> query($sql);
-try
-{
-$stmt= $conn->prepare($sql);
-$stmt->execute([$caption,$final_file, $file_type]);
-}
-catch(PDOException $e)
-{
-    handle_sql_errors($stmt, $e->getMessage());
-}
+
+//$stmt= $conn->prepare($sql);
+//$stmt->execute([$caption,$final_file, $file_type]);
+
+
+
   //mysqli_query($sql);
 //die();
+
+
+try {
+   
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "INSERT INTO news_notification (caption,file_name,type)
+    VALUES ('$caption', '$final_file', '$file_type')";
+    // use exec() because no results are returned
+    //echo $sql; die();
+    $conn->exec($sql);
+   // echo "New record created successfully";
+    }
+catch(PDOException $e)
+    {
+    echo $sql . "<br>" . $e->getMessage();
+    }
   ?>
   <script>
-  alert('successfully uploaded');
+  //alert('successfully uploaded');
         window.location.href='admin-news.php?success';
         </script>
   <?php
@@ -51,7 +65,7 @@ catch(PDOException $e)
  {
   ?>
   <script>
-  alert('error while uploading file');
+  //alert('error while uploading file');
         window.location.href='admin-news?fail';
         </script>
   <?php

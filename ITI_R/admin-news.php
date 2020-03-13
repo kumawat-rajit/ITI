@@ -23,12 +23,7 @@ if(isset($_GET['success']))
         <label>Problem While File Uploading !</label>
         <?php
  }
- else
- {
-  ?>
-        <label>Try to upload any files(PDF, DOC, EXE, VIDEO, MP3, ZIP,etc...)</label>
-        <?php
- }
+
  ?>
 
 
@@ -44,7 +39,7 @@ if(isset($_GET['success']))
 </div>
 
 <?php  	
- $sql = "SELECT * FROM news_notification";
+ $sql = "SELECT * FROM news_notification order by id DESC";
  $stmt = $conn->query($sql);
  //$stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -73,21 +68,21 @@ $i=1;
                                          echo "<td>" . $row['caption'] . "</td>";
                                         echo "<td>".$row['file_name'] . "</td>";
                                         echo "<td>" . $row['type'] . "</td>";
-                                        echo "<td><a href='uploads/'".$row['file_name']."' target='_blank'>View file</a></td>";
+                                        echo "<td><a href='uploads/".$row['file_name']."' target='_blank'>View file</a></td>";
                                                                                   
                                         echo "<td>";
                                         
 
                                            ?>
-                            <a href="#com_edit" class="edit" data-toggle="modal">
+                            <a href="#upload_edit" class="edit" data-toggle="modal">
 							<i class='fa fa-edit update' style='color:#1f2e2e' data-toggle="tooltip" 
 							data-id="<?php echo $row["id"]; ?>"
               
-							data-name="<?php echo $row["caption"]; ?>"
+							data-caption="<?php echo $row["caption"]; ?>"
 							
 							
 							title="Edit"></i></a>
-                          <a href="#com_delete" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class='fa fa-times' style='color:red' data-toggle="tooltip" 
+                          <a href="#upload_delete" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class='fa fa-times' style='color:red' data-toggle="tooltip" 
 						 title="Delete"></i></a>
                                            <?php
                                           
@@ -153,4 +148,71 @@ $i=1;
     </div>
   </div>
 </div>
+
+
+
+<div class="modal fade" id="upload_edit" data-keyboard="false" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Edit Caption</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <form id="uploadedit_form">
+      
+      <input type="hidden" id="id_u" name="id" class="form-control" required>
+   
+   <div class="form-group">
+    <label for="caption">Caption:</label>
+   <textarea class="form-control" rows="3" placeholder="Enter Caption" id="caption_u" name="caption" ></textarea>
+  </div>
+  
+  
+  <input type="hidden" value="2" name="type">
+ </form> 
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+         <button type="button" class="btn btn-primary" id="upload_update">Update</button>
+         </div>
+
+
+     </div> 
+
+    </div>
+ 
+</div>
+
+
+
+<!--Delete Modal HTML -->
+	<div id="upload_delete" class="modal fade" data-backdrop="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+						
+					<div class="modal-header">						
+						<h4 class="modal-title">Delete</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<input type="hidden" id="id_d" name="id" class="form-control">					
+						<p>Are you sure you want to delete these Records?</p>
+						<p class="text-warning"><small>This action cannot be undone.</small></p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<button type="button" class="btn btn-danger" id="upload_del">Delete</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
  <?php  include_once('admin-footer.php') ?>
