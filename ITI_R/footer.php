@@ -123,15 +123,12 @@
             <div class="container">           
                 <div class="row">
                     <div class="footer_content">
-                           
-
-                          
-
+                       
                         <div class="copyright">                        
                             <p>Coyright <i class="fa fa-copyright"></i>
  2020 <a href="#">rooprajtiti</a>. All rights reserved.</p>                        </div>
 
-                                                    <!-- Go Top -->
+                                               <!-- Go Top -->
                             <a class="go-top show" id="backtotop">
                                 <i class="fa fa-chevron-up"></i>
                             </a>

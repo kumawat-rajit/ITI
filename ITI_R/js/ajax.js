@@ -165,4 +165,150 @@ $(document).on("click", ".delete", function() {
 		});
 	});
 
+	
+// update upload technical staff
 
+	$(document).on('click','.updates',function() {
+		//alert('hi');
+		var id=$(this).attr("data-id");
+		var desig=$(this).attr("data-desig");
+		var trade=$(this).attr("data-trade");
+		var name=$(this).attr("data-name");
+		var doj=$(this).attr("data-doj");
+		var quali=$(this).attr("data-quali");
+		var stream=$(this).attr("data-stream");
+		var emp_type=$(this).attr("data-emp_type");
+		var cti=$(this).attr("data-cti");
+		//alert(trade);
+//console(desig);
+		$('#id_u').val(id);
+		$('#desig_u').val(desig);
+		$('#trade_u').val(trade);
+		$('#name_u').val(name);
+		$('#doj_u').val(doj);
+		$('#qualification_u').val(quali);
+		$('#stream_u').val(stream);
+		$('#emp_type_u').val(emp_type);
+		$('#cti_u').val(cti);
+		
+		
+	});
+	
+	$(document).on('click','#btnstaff_update',function() {
+		var data = $("#staffedit_form").serialize();
+		$.ajax({
+			data: data,
+			type: "post",
+			url: "backend/technical.php",
+			success: function(dataResult){
+				console.log(dataResult);
+					var dataResult = JSON.parse(dataResult);
+					if(dataResult.statusCode==200){
+						$('#staff_edit').modal('hide');
+						alert('Data updated successfully !'); 
+                        location.reload();						
+					}
+					else if(dataResult.statusCode==201){
+					   //alert(dataResult);
+					}
+			}
+		});
+	});
+
+
+
+//delete computer question	
+
+$(document).on("click", ".delete", function() { 
+			var id=$(this).attr("data-id");
+		$('#id_d').val(id);
+		
+	});
+
+
+	$(document).on("click", "#btnstaff_del", function() { 
+		
+		$.ajax({
+			url: "backend/technical.php",
+			type: "POST",
+			cache: false,
+			data:{
+				type:3,
+				id: $("#id_d").val()
+			},
+			success: function(dataResult){
+				//console.log(dataResult);
+					$('#staff_delete').modal('hide');
+					//$("#"+dataResult).remove();
+			      location.reload();
+			}
+		});
+	});
+
+
+//paper edit
+
+$(document).on('click','.update',function() {
+		//alert('hi');
+		var id=$(this).attr("data-id");
+		var name=$(this).attr("data-caption");
+		
+		
+		$('#id_u').val(id);
+		$('#caption_u').val(name);
+		
+		
+	});
+	
+	$(document).on('click','#paper_update',function() {
+		var data = $("#uploadedit_form").serialize();
+		//alert('sdf');
+		console.log(data);
+		$.ajax({
+			data: data,
+			type: "post",
+			url: "backend/paper.php",
+			success: function(dataResult){
+				console.log(dataResult);
+					var dataResult = JSON.parse(dataResult);
+					if(dataResult.statusCode==200){
+						$('#paper_edit').modal('hide');
+						alert('Data updated successfully !'); 
+                        location.reload();						
+					}
+					else if(dataResult.statusCode==201){
+					   //alert(dataResult);
+					}
+			}
+		});
+	});
+
+
+
+//delete computer question	
+
+$(document).on("click", ".delete", function() { 
+			var id=$(this).attr("data-id");
+		$('#id_d').val(id);
+		
+	});
+
+
+	$(document).on("click", "#paper_del", function() { 
+		
+		$.ajax({
+			url: "backend/paper.php",
+			type: "POST",
+			cache: false,
+			data:{
+				type:3,
+				id: $("#id_d").val()
+			},
+			success: function(dataResult){
+				//console.log(dataResult);
+					$('#paper_delete').modal('hide');
+					//$("#"+dataResult).remove();
+			      location.reload();
+			}
+		});
+	});

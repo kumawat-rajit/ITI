@@ -31,15 +31,15 @@ if(isset($_GET['success']))
 <main style="min-height: 350px;">
 <div class="container-fluid">
 	<div style="margin-bottom: 20px;">
-  <h4 style="display: inline;" class="heading">New & Notification</h4>
-  <button type="button" style="float:right; display: inline;" class="btn btn-primary" data-toggle="modal" data-target="#news_add">Add New</button>
+  <h4 style="display: inline;" class="heading">ITI & Other Competition Papers</h4>
+  <button type="button" style="float:right; display: inline;" class="btn btn-primary" data-toggle="modal" data-target="#paper_add">Add New</button>
   </div>
   <div class="clearfix"></div>
   <div class="row">
 </div>
 
 <?php  	
- $sql = "SELECT * FROM news_notification order by id DESC";
+ $sql = "SELECT * FROM iti_papers order by id DESC";
  $stmt = $conn->query($sql);
  //$stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -74,7 +74,7 @@ $i=1;
                                         
 
                                            ?>
-                            <a href="#upload_edit" class="edit" data-toggle="modal">
+                            <a href="#paper_edit" class="edit" data-toggle="modal">
 							<i class='fa fa-edit update' style='color:#1f2e2e' data-toggle="tooltip" 
 							data-id="<?php echo $row["id"]; ?>"
               
@@ -82,7 +82,7 @@ $i=1;
 							
 							
 							title="Edit"></i></a>
-                          <a href="#upload_delete" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class='fa fa-times' style='color:red' data-toggle="tooltip" 
+                          <a href="#paper_delete" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class='fa fa-times' style='color:red' data-toggle="tooltip" 
 						 title="Delete"></i></a>
                                            <?php
                                           
@@ -110,7 +110,7 @@ $i=1;
 
 
 <!-- The Modal  -->
-<div class="modal fade" id="news_add" data-keyboard="false" data-backdrop="false">
+<div class="modal fade" id="paper_add" data-keyboard="false" data-backdrop="false">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -123,7 +123,7 @@ $i=1;
       <!-- Modal body -->
       <div class="modal-body">
          
-       <form id="comadd_form"  action="news-upload.php" method="post" enctype="multipart/form-data">
+       <form id="comadd_form"  action="paper-upload.php" method="post" enctype="multipart/form-data">
        
  
    <div class="form-group">
@@ -151,7 +151,7 @@ $i=1;
 
 
 
-<div class="modal fade" id="upload_edit" data-keyboard="false" data-backdrop="false">
+<div class="modal fade" id="paper_edit" data-keyboard="false" data-backdrop="false">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -180,7 +180,7 @@ $i=1;
       <!-- Modal footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-         <button type="button" class="btn btn-primary" id="upload_update">Update</button>
+         <button type="button" class="btn btn-primary" id="paper_update">Update</button>
          </div>
 
 
@@ -193,7 +193,7 @@ $i=1;
 
 
 <!--Delete Modal HTML -->
-	<div id="upload_delete" class="modal fade" data-backdrop="false">
+	<div id="paper_delete" class="modal fade" data-backdrop="false">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form>
@@ -209,7 +209,7 @@ $i=1;
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<button type="button" class="btn btn-danger" id="upload_del">Delete</button>
+						<button type="button" class="btn btn-danger" id="paper_del">Delete</button>
 					</div>
 				</form>
 			</div>

@@ -13,7 +13,7 @@ $conn = $database->getConnection();
 <main style="min-height: 350px;">
 <div class="container-fluid">
   <div style="margin-bottom: 20px;">
-  <h4 style="display: inline;" class="heading">Managing Society</h4>
+  <h4 style="display: inline;" class="heading">Technical Staff</h4>
   <button type="button" style="float:right; display: inline;" class="btn btn-primary" data-toggle="modal" data-target="#staff_add">Add New</button>
   </div>
   <div class="clearfix"></div>
@@ -45,28 +45,28 @@ $i=1;
                                         echo "<th>Action</th>";
                                     echo "</tr>";
                                 echo "</thead>";
-
+//echo date_format($date,"Y/m/d");
                                  echo "<tbody>";
                                  while ($row = $stmt->fetch()) {
-                                                                   
+                                      $date = date_create($row['doj']);                       
                                     echo "<tr>";
                                         echo "<td>" . $i . "</td>";
                                         echo "<td>".$row['designation'] . "</td>";
                                         echo "<td>" . $row['trade'] . "</td>";
                                         echo "<td>" . $row['name'] . "</td>";
-                                        echo "<td>" . $row['doj'] . "</td>";
+                                        echo "<td>" . date_format($date,'d/m/Y'). "</td>";
                                          echo "<td>" . $row['qualification'] . "</td>";
                                           echo "<td>" . $row['stream'] . "</td>";
                                            echo "<td>" . $row['emp_type'] . "</td>";
                                             echo "<td>" . $row['cti'] . "</td>";
-                                            echo "<td>" . $row['photo_link'] . "</td>";
+                                            echo "<td><img src='uploads/".$row['photo_link']."' height='80' width='50'></td>";
                                           
                                         echo "<td>";
                                         
 
                                            ?>
                             <a href="#staff_edit" class="edit" data-toggle="modal">
-              <i class='fa fa-edit update' style='color:#1f2e2e' data-toggle="tooltip" 
+              <i class='fa fa-edit updates' style='color:#1f2e2e' data-toggle="tooltip" 
               data-id="<?php echo $row["id"]; ?>"
               data-desig="<?php echo $row["designation"]; ?>"
               data-trade="<?php echo $row["trade"]; ?>"
@@ -119,44 +119,56 @@ $i=1;
       <!-- Modal body -->
       <div class="modal-body">
          
-       <form id="comadd_form">
+       <form   action="admin-tech_upload.php" method="post" enctype="multipart/form-data">
        
   <div class="form-group">
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" placeholder="Name" id="name" name="name" >
+    <label for="desig">Designation:</label>
+    <input type="text" class="form-control" placeholder="Enter Designation" id="desig" name="desig" >
   </div>
   <div class="form-group">
-    <label for="desig">Designation:</label>
-      <input type="text" class="form-control" placeholder="Enter Designation" id="desig" name="desig" >
+    <label for="trade">Trade:</label>
+      <input type="text" class="form-control" placeholder="Enter Trade" id="trade" name="trade" >
    
   </div>
  <div class="form-group">
-    <label for="fname">Father's Name:</label>
-    <input type="text" class="form-control" placeholder="Enter Father's Name" id="fname" name="fname" >
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" placeholder="Enter Name" id="name" name="name" >
   </div>
    <div class="form-group">
-    <label for="address">Address:</label>
-   <textarea class="form-control" rows="3" placeholder="Enter Address" id="address" name="address" ></textarea>
+    <label for="doj">Date of Joining:</label>
+   <input type="date" lass="form-control" rows="3" placeholder="Enter Address" id="doj" name="doj" >
   </div>
    <div class="form-group">
-    <label for="mo">Member of other Soc./Trust/cmp.</label>
-    <input type="text" class="form-control" placeholder="Enter Detail" id="mo" name="mo" >
+    <label for="qualification">Qualification:</label>
+    <input type="text" class="form-control" placeholder="Enter Qualification" id="qualification" name="qualification" >
   </div>
    <div class="form-group">
-    <label for="detail">If yes, details</label>
-    <input type="text" class="form-control" placeholder="Enter Detail" id="detail" name="detail" >
+    <label for="stream">Stream:</label>
+    <input type="text" class="form-control" placeholder="Enter Stream" id="stream" name="stream" >
+  </div>
+  <div class="form-group">
+    <label for="emp_type">Reg/Adhoc:</label>
+    <input type="text" class="form-control" placeholder="Enter Reg/Adhoc" id="emp_type" name="emp_type" >
+  </div>
+  <div class="form-group">
+    <label for="stream">CTI:</label>
+    <input type="text" class="form-control" placeholder="Enter Yes/No" id="cti" name="cti" >
+  </div>
+  <div class="form-group">
+    <label for="stream">Upload Photo:</label>
+    <input type="file" class="form-control" id="file" name="file" >
   </div>
   
-  <input type="hidden" value="1" name="type">
  
+ <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> 
+        <button type="submit" class="btn btn-primary" name="btnstaff_add" id="btnstaff_add">Add</button>
+      </div>
 </form> 
       </div>
 
       <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> 
-        <button type="button" class="btn btn-primary" id="btncom_add">Add</button>
-      </div>
+      
 
     </div>
   </div>
@@ -164,45 +176,53 @@ $i=1;
 
 <!-- Edit -->
 
-<div class="modal fade" id="com_edit" data-keyboard="false" data-backdrop="false">
+<div class="modal fade" id="staff_edit" data-keyboard="false" data-backdrop="false">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Edit Member Details</h4>
+        <h4 class="modal-title">Edit Staff Details</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-       <form id="comedit_form">
+       <form id="staffedit_form">
         
   <div class="form-group">
       <input type="hidden" id="id_u" name="id" class="form-control" required>
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" placeholder="Name" id="name_u" name="name" >
+      <label for="desig">Designation:</label>
+    <input type="text" class="form-control" placeholder="Enter Designation" id="desig_u" name="desig" >
   </div>
   <div class="form-group">
-    <label for="desig">Designation:</label>
-      <input type="text" class="form-control" placeholder="Enter Designation" id="desig_u" name="desig" >
-  
+    <label for="trade">Trade:</label>
+      <input type="text" class="form-control" placeholder="Enter Trade" id="trade_u" name="trade" >
+   
   </div>
- <div class="form-group">
-    <label for="fname">Father's Name:</label>
-    <input type="text" class="form-control" placeholder="Enter Father's Name" id="fname_u" name="fname" >
-  </div>
-   <div class="form-group">
-    <label for="address">Address:</label>
-   <textarea class="form-control" rows="3" placeholder="Enter Address" id="address_u" name="address" ></textarea>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" placeholder="Enter Name" id="name_u" name="name" >
   </div>
    <div class="form-group">
-    <label for="mo">Member of other Soc./Trust/cmp.</label>
-    <input type="text" class="form-control" placeholder="Enter Detail" id="mo_u" name="mo" >
+    <label for="doj">Date of Joining:</label>
+   <input type="date" lass="form-control" rows="3" placeholder="Enter Address" id="doj_u" name="doj" >
   </div>
    <div class="form-group">
-    <label for="detail">If yes, details</label>
-    <input type="text" class="form-control" placeholder="Enter Detail" id="detail_u" name="detail" >
+    <label for="qualification">Qualification:</label>
+    <input type="text" class="form-control" placeholder="Enter Qualification" id="qualification_u" name="qualification" >
+  </div>
+   <div class="form-group">
+    <label for="stream">Stream:</label>
+    <input type="text" class="form-control" placeholder="Enter Stream" id="stream_u" name="stream" >
+  </div>
+  <div class="form-group">
+    <label for="emp_type">Reg/Adhoc:</label>
+    <input type="text" class="form-control" placeholder="Enter Reg/Adhoc" id="emp_type_u" name="emp_type" >
+  </div>
+  <div class="form-group">
+    <label for="stream">CTI:</label>
+    <input type="text" class="form-control" placeholder="Enter Yes/No" id="cti_u" name="cti" >
   </div>
   <input type="hidden" value="2" name="type">
  </form> 
@@ -211,7 +231,7 @@ $i=1;
       <!-- Modal footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-         <button type="button" class="btn btn-primary" id="btncom_update">Update</button>
+         <button type="button" class="btn btn-primary" id="btnstaff_update">Update</button>
          </div>
 
 
@@ -222,13 +242,13 @@ $i=1;
 </div>
 
 <!--Delete Modal HTML -->
-  <div id="com_delete" class="modal fade" data-backdrop="false">
+  <div id="staff_delete" class="modal fade" data-backdrop="false">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
             
           <div class="modal-header">            
-            <h4 class="modal-title">Delete Member</h4>
+            <h4 class="modal-title">Delete</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
           </div>
           <div class="modal-body">
@@ -238,7 +258,7 @@ $i=1;
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <button type="button" class="btn btn-danger" id="btncom_del">Delete</button>
+            <button type="button" class="btn btn-danger" id="btnstaff_del">Delete</button>
           </div>
         </form>
       </div>

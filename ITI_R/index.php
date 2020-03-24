@@ -1,4 +1,28 @@
-<?php  include_once('header.php') ?>
+<?php  
+include_once 'config/db_con.php';
+include_once('header.php') ;
+
+$database = new Database();
+$conn = $database->getConnection();
+/*$sql = "select update_time from information_schema.tables where table_schema = 'roop_rajat_iti' order by update_time desc limit 1 ";
+ $stmt = $conn->query($sql);
+ //$stmt->execute();
+//$stmt->setFetchMode(PDO::FETCH_ASSOC);
+$lastmodified=null;
+if($stmt->rowCount() > 0)
+{
+	$row=$stmt->fetch();
+	//print_r($row);
+	$lastmodified=$row['UPDATE_TIME'];
+	//$arr=implode(" ",$lastmodified);  
+	echo $lastmodified;
+}*/
+ $sql = "SELECT * FROM news_notification order by id desc limit 5";
+ $stmt = $conn->query($sql);
+ $stmt->execute();
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+?>
 <!-- bodiy content -->
 <div id = "content" class="page-wrap fullwidth">
 	<div class="container content-wrapper">
@@ -104,6 +128,22 @@
 		<div class="widget widget_recent_entries">
 			<h2 class="widgettitle">Latest News</h2>
 			<ul>
+<?php  if($stmt->rowCount() > 0){ 
+ while ($row = $stmt->fetch()) {
+ 	?>
+ 	<li>
+<a href="uploads/<?php echo $row['file_name'] ?>" target="_blank"><?php echo $row['caption'] ?></a>
+</li>
+ 	<?php
+ }
+}
+else{
+                            echo "<p class='lead'><em>No records were found.</em></p>";
+                        }
+	?>
+</ul>
+
+			<!--<ul>
 											<li>
 					<a href="#">Parents  Instructor Meeting</a>
 									</li>
@@ -115,7 +155,7 @@
 											<li>
 					<a href="#">Career Opportunities for ITI Students in Rajasthan</a>
 									</li>
-					</ul>
+					</ul>-->
 		</div>
 		
 	</div>
@@ -138,7 +178,7 @@
 
 										<div class="wpb_text_column wpb_content_element ">
 										<div class="wpb_wrapper">
-											<p>Roop Rajat Pvt. ITI,Jaipur has been setup with the sole objective of imparting vocational&nbsp; training to aspiring technicians&nbsp; offering an environment where young&nbsp; minds can&nbsp; grow to&nbsp; their full&nbsp; potential and become disciplined and skilled&nbsp; Technicians.</p>
+											<p>Welcome to Roop Rajat Private Industrial Training Institute, it is situated at prime location in district Jaipur. It is established in 2013 with intake of 120 trainees. Its run by Parband Samati Bhartiya Vidhya Mandir. Institute has all infrastructure facilities needed for overall development of skilled manpower, like Workshops, theory rooms, library, Playground, Audio Visual Aids, and Hi-Tech Computer labs for awareness about computer to trainees of all trades. There is Electrician Trade of two year's duration, with 120 intakes per session. Roop Rajat Pvt. ITI,Jaipur has been setup with the sole objective of imparting vocational&nbsp; training to aspiring technicians&nbsp; offering an environment where young&nbsp; minds can&nbsp; grow to&nbsp; their full&nbsp; potential and become disciplined and skilled&nbsp; Technicians.</p>
 								<p>The institutes is also&nbsp; striving&nbsp; for reducing unemployment among educated youth by equipping them with suitable skills for employment and satisfy the requirements&nbsp; of Industries&nbsp; both for manufacturing&nbsp; and service&nbsp; sectors. Quality Training and 100% Placement support has been key factors in making Roop Rajat ITI as the Best ITI in Bassi, Jaipur.</p>
 								
 								<p>The&nbsp; Directorate&nbsp; General&nbsp; of&nbsp; Training,&nbsp; Ministry of&nbsp; Skill&nbsp; Development&nbsp; and Entrepreneurship recognized the performance of the Top 10 Government and Top 10&nbsp; Private ITIs&nbsp; according&nbsp; to the National&nbsp; level ITI&nbsp; Grading concluded recently.&nbsp;  Placement Cell of Institute who performed their best to impart quality training and supported the trainees in getting suitable employment.</p>

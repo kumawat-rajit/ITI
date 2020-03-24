@@ -1,4 +1,14 @@
-<?php  include_once('header.php') ;?>
+<?php include_once 'config/db_con.php';  
+include_once('header.php') ;
+$database = new Database();
+$conn = $database->getConnection();
+
+
+$sql = "SELECT * FROM technical_staff";
+ $stmt = $conn->query($sql);
+ $stmt->execute();
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
+?>
 <div style="margin-bottom: 35px;"></div>
 <div class="page-title">
     <div class="overlay"></div>   
@@ -46,19 +56,28 @@
 <td style="height: 74px; width: 8.94942%;" width="72"><span style="font-family: arial, helvetica, sans-serif; color: #ffffff;">CTI trained (Yes/No)</span></td>
 <td style="height: 74px; width: 6.61479%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #ffffff;">Photo link</span></td>
 </tr>
+<?php  if($stmt->rowCount() > 0){ 
+ while ($row = $stmt->fetch()) {
+     $date = date_create($row['doj']); 
+    ?>
+
 <tr style="height: 39px;">
 <td style="height: 39px; width: 6.09598%;" width="48"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">1.</span></td>
-<td style="height: 39px; width: 15.4345%;" width="162"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
-<td style="height: 39px; width: 11.8029%;" width="90"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Principal</span></td>
-<td style="height: 39px; width: 12.5811%;" width="102"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">.</span></td>
-<td style="height: 39px; width: 10.5058%;" width="84"></td>
-<td style="height: 39px; width: 11.4137%;" width="90"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
-<td style="height: 39px; width: 14.9157%;" width="66"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
-<td style="height: 39px; width: 8.94942%;" width="72"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
-<td style="height: 39px; width: 6.61479%;" width="54"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Photo</a></span></td>
+<td style="height: 39px; width: 15.4345%;" width="162"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo $row['name'] ?></span></td>
+<td style="height: 39px; width: 11.8029%;" width="90"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo $row['designation'] ?></span></td>
+<td style="height: 39px; width: 12.5811%;" width="102"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo $row['qualification'] ?></span></td>
+<td style="height: 39px; width: 10.5058%;" width="84"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo $row['trade'] ?></span></td>
+<td style="height: 39px; width: 11.4137%;" width="90"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo date_format($date,'d/m/Y') ?></span></td>
+<td style="height: 39px; width: 14.9157%;" width="66"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo $row['emp_type'] ?></span></td>
+<td style="height: 39px; width: 8.94942%;" width="72"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"><?php echo $row['cti'] ?></span></td>
+<td style="height: 39px; width: 6.61479%;" width="54"><span style="color: #0000ff;"><img src='uploads/<?php echo $row['photo_link'] ?>' height='80' width='50'></span></td>
 </tr>
 
-</tr>
+<?php
+ }
+}
+
+    ?>
 </tbody>
 </table>
 </div>

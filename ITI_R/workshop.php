@@ -45,50 +45,50 @@
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">a&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Total Area</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">1196</span></td>
 <td style="height: 22px; text-align: center; width: 55.191%;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">b&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Covered Area</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">800</span></td>
 <td style="height: 22px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">c&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Total Class Rooms Area</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">110</span></td>
 <td style="height: 22px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">d&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Total Workshops Area</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">405</span></td>
 <td style="height: 22px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">f&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Audio Visual Hall</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">0</span></td>
 <td style="height: 22px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">g&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Computer Lab</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">25</span></td>
 <td style="height: 22px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 22px;">
 <td style="height: 22px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">h&nbsp; &nbsp; &nbsp; &nbsp;</span></td>
 <td style="height: 22px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Play Area</span></td>
-<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 22px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">100</span></td>
 <td style="height: 22px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 21px;">
 <td style="height: 21px; text-align: center; width: 9.92509%;" width="54"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">i&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td>
 <td style="height: 21px; text-align: left; width: 34.0201%;" width="228"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Library</span></td>
-<td style="height: 21px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;"></span></td>
+<td style="height: 21px; text-align: left; width: 33.2232%;" width="192"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">22</span></td>
 <td style="height: 21px; width: 55.191%; text-align: center;" width="126"><span style="color: #0000ff;"><a style="color: #0000ff;" href="">Documents</a></span></td>
 </tr>
 <tr style="height: 10px;">

@@ -109,21 +109,13 @@
 													
 												</ul>
 									</li>
+									
 									<li>
-											<a href="#">Faculty</a>
+											<a href="#">Infrastructure</a>
 												<ul class="sub-menu">
 													<li>
 														<a href="technical-staff.php">Technical Staff</a>
 													</li>
-													<li>
-														<a href="#">Admistrative Staff</a>
-													</li>
-													
-												</ul>
-									</li>
-									<li>
-											<a href="#">Infrastructure</a>
-												<ul class="sub-menu">
 													<li>
 														<a href="workshop.php">Building & Workshop</a>
 													</li>
@@ -142,6 +134,9 @@
 													<li>
 														<a href="">Recent NCVT Result</a>
 													</li>
+													<li>
+														<a href="ITI-Papers.php">ITI & Competition Papers</a>
+													</li>
 													
 												</ul>
 									</li>
@@ -159,6 +154,10 @@
 													</li>
 													
 												</ul>
+									</li>
+									<li>
+											<a href="ITI-Papers.php">ITI Papers</a>
+												
 									</li>
 									<li>
 											<a href="contact-us.php">Contact Us</a>

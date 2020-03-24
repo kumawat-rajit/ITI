@@ -32,7 +32,7 @@ try {
    
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO news_notification (caption,file_name,type)
+    $sql = "INSERT INTO iti_papers (caption,file_name,type)
     VALUES ('$caption', '$final_file', '$file_type')";
     // use exec() because no results are returned
     //echo $sql; die();
@@ -43,12 +43,12 @@ catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
-    header("Location: admin-news.php?success"); 
+    header("Location: admin-iti_papers.php?success"); 
   
  }
  else
  {
-  header("Location: admin-news.php?fail");
+  header("Location: admin-iti_papers.php?fail");
   
  }
 }

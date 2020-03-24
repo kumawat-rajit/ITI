@@ -91,11 +91,11 @@ header("Location: index.php");
 												
 									</li>
 									<li>
-											<a href="admin-technical">Technical Staff</a>
+											<a href="admin-technical.php">Technical Staff</a>
 												
 									</li>
 									<li>
-											<a href="#">Admistrative Staff</a>
+											<a href="admin-iti_papers.php">ITI & Comp. Papers</a>
 												
 									</li>
 									<li>

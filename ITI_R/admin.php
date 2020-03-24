@@ -9,13 +9,13 @@ $db = $database->getConnection();
  
 // prepare user object
 $user = new User($db);
-print_r($_POST);
+//print_r($_POST);
 // set ID property of user to be edited
 $user->username = isset($_POST['username']) ? $_POST['username'] : die();
 $user->password = isset($_POST['password']) ? $_POST['password'] : die();
 // read the details of user to be edited
-echo $user->username;
-echo $user->password;
+//echo $user->username;
+//echo $user->password;
 
 
 $stmt = $user->login();

@@ -3,7 +3,7 @@ include_once('header.php') ;
 $database = new Database();
 $conn = $database->getConnection();
 
-$sql = "SELECT * FROM news_notification order by id desc";
+$sql = "SELECT * FROM iti_papers order by id desc";
  $stmt = $conn->query($sql);
  $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -20,9 +20,9 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 		<div class="breadcrumb-trail breadcrumbs">
 			<span class="trail-browse"></span> <span class="trail-begin"><a href="index.php" title="Best ITI College in Rajastna | ITI Trade for Govt Job | Apply for  ITI Admission">Home</a></span>
 			
-			 <span class="sep">&gt;</span> <span class="trail-end">News & Notification</span>
+			 <span class="sep">&gt;</span> <span class="trail-end">ITI & Competition Papers</span>
 		</div> 
-            <h1>News & Notification</h1>            </div><!-- /.col-md-12 -->  
+            <h1>ITI & Other Competition Exams Papers</h1>            </div><!-- /.col-md-12 -->  
         </div><!-- /.row -->  
     </div><!-- /.container -->                      
 </div>
@@ -48,7 +48,7 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
  	<?php
  }
 }
-else{
+ else{
                             echo "<p class='lead'><em>No records were found.</em></p>";
                         }
 	?>
